@@ -9,4 +9,4 @@ For more complex repositories, this file should have structure about not only ho
 to build on top of it -- for example, if I wanted to add a new Simulation environment, a rough sketch of the flow to
 do that, and so on.
 
-Try keeping this up to date, but not until after code has relatively stabilized. 
+Try keeping this up to date, but not until after code has relatively stabilized.

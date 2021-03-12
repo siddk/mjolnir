@@ -1,9 +1,9 @@
 # Mjolnir
 
-> *Mjolnir*: Thor's hammer, a divine instrument making its holder worthy of wielding lightning. 
+> *Mjolnir*: Thor's hammer, a divine instrument making its holder worthy of wielding lightning.
 
-Template Research Repository for managing Machine Learning Research Projects built with 
-[PyTorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/), using [Anaconda](https://www.anaconda.com/) 
+Template Research Repository for managing Machine Learning Research Projects built with
+[PyTorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/), using [Anaconda](https://www.anaconda.com/)
 for Python Dependencies and Sane Quality Defaults (Black, Flake, isort).
 
 Template created by Sidd Karamcheti.
@@ -13,26 +13,26 @@ Template created by Sidd Karamcheti.
 ## Contributing
 
 Key section if this is a shared research project (e.g., other collaborators). Usually you should have a detailed set
-of instructions in [`CONTRIBUTING.md`](./CONTRIBUTING.md) - Notably, before committing to the repository, *make 
+of instructions in [`CONTRIBUTING.md`](./CONTRIBUTING.md) - Notably, before committing to the repository, *make
 sure to set up your dev environment and pre-commit install (`pre-commit install`)!*
 
 Here are sample contribution guidelines (high-level):
 
 + Install and activate the Conda Environment using the `QUICKSTART` instructions below.
-  
+
 + On installing new dependencies (via `pip` or `conda`), please make sure to update the `environment-<ID>.yaml` files
 via the following command (note that you need to separately create the `environment-cpu.yaml` file by exporting from
 your local development environment!):
-  
+
   `make serialize-env --arch=<cpu | gpu>`
-  
---- 
+
+---
 
 ## Quickstart
 
 *Note: Replace instances of `mjolnir` and other instructions with instructions specific to your repository!*
 
-Clones `mjolnir` to the working directory, then walks through dependency setup, mostly leveraging the 
+Clones `mjolnir` to the working directory, then walks through dependency setup, mostly leveraging the
 `environment.yaml` files.
 
 ### Shared Environment (for Clusters w/ Centralized Conda)
@@ -42,7 +42,7 @@ the way I've set up the ILIAD Cluster, this section makes it really easy to main
 users via centralized `conda` environments, but YMMV.*
 
 @Sidd (or central repository maintainer) has already set up the conda environments in Stanford-NLP/ILIAD. The only
-necessary steps for you to take are cloning the repo, activating the appropriate environment, and running 
+necessary steps for you to take are cloning the repo, activating the appropriate environment, and running
 `pre-commit install` to start developing.
 
 ### Local Development - Linux w/ GPU & CUDA 11.0
@@ -80,7 +80,7 @@ This repository comes with sane defaults for `black`, `isort`, and `flake8` for 
 defines a bare-bones Makefile (to be extended for your specific build/run needs) for formatting/checking, and dumping
 updated versions of the dependencies (after installing new modules).
 
-Other repository-specific usage notes should go here (e.g., training models, running a saved model, running a 
+Other repository-specific usage notes should go here (e.g., training models, running a saved model, running a
 visualization, etc.).
 
 ## Repository Structure
@@ -114,7 +114,7 @@ deeply about why!
 ## Start-Up (from Scratch)
 
 Use these commands if you're starting a repository from scratch (this shouldn't be necessary for your collaborators
-, since you'll be setting things up, but I like to keep this in the README in case things break in the future). 
+, since you'll be setting things up, but I like to keep this in the README in case things break in the future).
 Generally, if you're just trying to run/use this code, look at the Quickstart section above.
 
 ### GPU & Cluster Environments (CUDA 11.0)

@@ -1,6 +1,6 @@
 # Mjolnir Architecture
 
-It's always a good idea to write up how a codebase is structured -- Sidd generally likes to talk about code flow,
+It's always a good idea to write up how a codebase is structured -- I generally like to talk about code flow,
 entry points, and key APIs. For example, a top level `train.py`, separate folders for evaluation/visualization, a
 centralized `src` directory with separate modules for preprocessing, model definition (with Lightning, this is all
 you need for training), and other utilities.

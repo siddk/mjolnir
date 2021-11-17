@@ -2,7 +2,7 @@
 
 > *Mjolnir*: Thor's hammer, a divine instrument making its holder worthy of wielding lightning.
 
-Template Research Repository for managing Machine Learning Research Projects built with
+Template repository for managing machine learning research projects built with
 [PyTorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/), using [Anaconda](https://www.anaconda.com/)
 for Python Dependencies and Sane Quality Defaults (Black, Flake, isort).
 
@@ -33,11 +33,11 @@ your local development environment!):
 *Note: Replace instances of `mjolnir` and other instructions with instructions specific to your repository!*
 
 Clones `mjolnir` to the working directory, then walks through dependency setup, mostly leveraging the
-`environment.yaml` files.
+`environment-<arch>.yaml` files.
 
 ### Shared Environment (for Clusters w/ Centralized Conda)
 
-*Note: The presence of this subsection depends on your setup. With the way the Stanford Cluster has been set up, and
+*Note: The presence of this subsection depends on your setup. With the way the Stanford NLP Cluster has been set up, and
 the way I've set up the ILIAD Cluster, this section makes it really easy to maintain dependencies across multiple
 users via centralized `conda` environments, but YMMV.*
 
@@ -122,7 +122,7 @@ Generally, if you're just trying to run/use this code, look at the Quickstart se
 ```bash
 conda create --name mjolnir python=3.8
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch   # CUDA=11.0 on most of Cluster!
-conda install ipython jupyter
+conda install ipython
 conda install pytorch-lightning -c conda-forge
 
 pip install black flake8 isort matplotlib pre-commit quinine wandb
@@ -138,7 +138,7 @@ Similar to the above, but installs the CPU-only versions of Torch and similar de
 ```bash
 conda create --name mjolnir python=3.8
 conda install pytorch torchvision torchaudio -c pytorch
-conda install ipython jupyter
+conda install ipython
 conda install pytorch-lightning -c conda-forge
 
 pip install black flake8 isort matplotlib pre-commit quinine wandb
@@ -150,4 +150,4 @@ pip install black flake8 isort matplotlib pre-commit quinine wandb
 ### Containerized Setup
 
 Support for running `mjolnir` inside of a Docker or Singularity container is TBD. If this support is urgently required,
-please file an issue (this is an actual WIP).
+please file an issue.

@@ -1,0 +1,6 @@
+{
+  "repo_name": "mjolnir",
+  "conda_env": "mjolnir",
+  "project": "Mjolnir",
+  "project_description": "Template repository for quickly spinning up PyTorch-Lightning research projects"
+}

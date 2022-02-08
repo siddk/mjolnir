@@ -7,7 +7,7 @@ Cookiecutter template repository for managing machine learning research projects
 for Python Dependencies and Sane Quality Defaults (Black, Flake, isort).
 
 Template created by ⚡️ Sidd Karamcheti ⚡️; if you find this useful, but are looking for my generic PyTorch setup,
-definitely check out the `[kindling](https://github.com/siddk/kindling)` template!
+definitely check out the [`kindling`](https://github.com/siddk/kindling) template!
 
 ---
 

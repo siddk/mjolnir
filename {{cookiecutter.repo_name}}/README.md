@@ -29,7 +29,7 @@ your local development environment!):
 
 ## Quickstart
 
-Clones `{{cookicutter.repo_name}}` to the working directory, then walks through dependency setup, leveraging the
+Clones `{{cookiecutter.repo_name}}` to the working directory, then walks through dependency setup, leveraging the
 `environment-<arch>.yaml` files.
 
 ### Shared Environment (for Clusters w/ Centralized Conda)

@@ -6,7 +6,8 @@ Cookiecutter template repository for managing machine learning research projects
 [PyTorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/), using [Anaconda](https://www.anaconda.com/)
 for Python Dependencies and Sane Quality Defaults (Black, Flake, isort).
 
-Template created by ⚡️ Sidd Karamcheti ⚡️
+Template created by ⚡️ Sidd Karamcheti ⚡️; if you find this useful, but are looking for my generic PyTorch setup,
+definitely check out the `[kindling](https://github.com/siddk/kindling)` template!
 
 ---
 

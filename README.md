@@ -10,12 +10,23 @@ Template created by ⚡️ Sidd Karamcheti ⚡️
 
 ---
 
-## Usage
+## Setup
 
-You can load this repository via the default `cookiecutter` tool:
+The preferred setup is via Github Templates (Green Button above --> "Use as Template") or upon new repository creation
+(borrowed with gratitude from
+[Stefan Buck's instructions](https://stefanbuck.com/blog/repository-templates-meets-github-actions)). Manually edit the
+`cookiecutter.json` file (in browser!), then commit, and let Github Actions take care of the rest.
+
+---
+
+You can also load this repository via the default `cookiecutter` tool:
 
 ```bash
+# Create a new directory with Cookiecutter templates (prompts you for config values)
+cookiecutter gh:siddk/mjolnir
 
+# If you've already initialized a github repo with same name, and want to replace contents (run from root of github repo)
+cookiecutter gh:siddk/mjolnir -o ../ -f
 ```
 
 ## Cookiecutter Repository Structure

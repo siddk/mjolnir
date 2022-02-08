@@ -15,14 +15,14 @@ from conf.train_schema import get_train_schema
 
 def train() -> None:
     # Parse Quinfig (via Quinine Argparse Binding)
-    print("[*] Mjolnir :: Launching =>>>")
+    print("[*] {{cookiecutter.project}} :: Launching =>>>")
     quinfig = QuinineArgumentParser(schema=get_train_schema()).parse_quinfig()
-    print('\t=>> "Thunder is good, thunder is impressive; but it is Lightning that does all the work" (Mark Twain)')
+    print("\t=>> Launching core {{cookiecutter.repo_name}} training script...")
 
     # Create Unique Run Name
     run_id = quinfig.run_id
     if run_id is None:
-        run_id = f"mjolnir+{datetime.now().strftime('%Y-%m-%d-%H:%M')}"
+        run_id = f"{{cookiecutter.repo_name}}+{datetime.now().strftime('%Y-%m-%d-%H:%M')}"
 
     # Do stuff...
 

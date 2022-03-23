@@ -8,19 +8,19 @@ Run with: `python train.py --config conf/config.yaml`
 """
 from datetime import datetime
 
-from quinine import QuinineArgumentParser
+import hydra
 
-from conf.train_schema import get_train_schema
+from conf import Config
 
 
-def train() -> None:
-    # Parse Quinfig (via Quinine Argparse Binding)
+@hydra.main(config_path=None, config_name="config")
+def train(cfg: Config) -> None:
+    # Parse Hydra Configuration Dictionary...
     print("[*] {{cookiecutter.project}} :: Launching =>>>")
-    quinfig = QuinineArgumentParser(schema=get_train_schema()).parse_quinfig()
+    run_id, seed = cfg.run_id, cfg.seed
     print("\t=>> Thunder is good, thunder is impressive; but it is Lightning that does all the work (Mark Twain)...")
 
     # Create Unique Run Name
-    run_id = quinfig.run_id
     if run_id is None:
         run_id = f"{{cookiecutter.repo_name}}+{datetime.now().strftime('%Y-%m-%d-%H:%M')}"
 

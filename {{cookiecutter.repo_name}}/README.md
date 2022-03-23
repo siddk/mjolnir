@@ -81,7 +81,7 @@ visualization, etc.).
 High-level overview of repository file-tree (expand on this as you build out your project). This is meant to be brief,
 more detailed implementation/architectural notes should go in [`ARCHITECTURE.md`](./ARCHITECTURE.md).
 
-+ `conf` - Quinine configurations (`.yaml`) for various runs (used in lieu of `argparse` or `typed-argument-parser`)
++ `conf` - Hydra structured configurations (`.py`) for various runs (used in lieu of `argparse` or `typed-argument-parser`)
 + `environments` - Serialized conda environments for both CPU and GPU (CUDA 11.3). Other architectures/CUDA toolkit
 environments can be added here as necessary.
 + `src/` - Source code - has all utilities for preprocessing, Lightning model definitions, utilities.
@@ -115,10 +115,10 @@ Generally, if you're just trying to run/use this code, look at the Quickstart se
 ```bash
 conda create --name {{cookiecutter.conda_env}} python=3.8
 conda activate {{cookiecutter.conda_env}}
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch   # CUDA=11.3 by default!
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 conda install ipython pytorch-lightning -c conda-forge
 
-pip install black flake8 isort matplotlib pre-commit quinine wandb
+pip install black flake8 hydra-core isort matplotlib pre-commit wandb
 
 # Install other dependencies via pip below -- conda dependencies should be added above (always conda before pip!)
 ...
@@ -134,7 +134,7 @@ conda activate {{cookiecutter.conda_env}}
 conda install pytorch torchvision torchaudio -c pytorch
 conda install ipython pytorch-lightning -c conda-forge
 
-pip install black flake8 isort matplotlib pre-commit quinine wandb
+pip install black flake8 hydra-core isort matplotlib pre-commit wandb
 
 # Install other dependencies via pip below -- conda dependencies should be added above (always conda before pip!)
 ...

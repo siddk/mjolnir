@@ -3,8 +3,9 @@
 > *Mjolnir*: Thor's hammer, a divine instrument making its holder worthy of wielding lightning.
 
 Cookiecutter template repository for managing machine learning research projects built with
-[PyTorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/), using [Anaconda](https://www.anaconda.com/)
-for Python Dependencies and Sane Quality Defaults (Black, Flake, isort).
+[PyTorch-Lightning](https://pytorch-lightning.readthedocs.io/en/latest/), using [Hydra](https://hydra.cc/) for configuration,
+[Anaconda](https://www.anaconda.com/) for python dependencies, and sane quality defaults (`black`, `isort`, `flake8`,
+`precommit`).
 
 Template created by ⚡️ Sidd Karamcheti ⚡️; if you find this useful, but are looking for my generic PyTorch setup,
 definitely check out the [`kindling`](https://github.com/siddk/kindling) template!
@@ -35,7 +36,7 @@ cookiecutter gh:siddk/mjolnir -o ../ -f
 High-level overview of repository file-tree (expand on this as you build out your project). Feel free to restructure,
 but this is what the template comes loaded with.
 
-+ `conf` - Quinine Configurations (`.yaml`) for various runs (used in lieu of `argparse` or `typed-argument-parser`)
++ `conf` - Hydra structured configurations (`.py`) for various runs (used in lieu of `argparse` or `typed-argument-parser`)
 + `environments` - Serialized Conda Environments for both CPU and GPU (CUDA 11.0). Other architectures/CUDA toolkit
 environments can be added here as necessary.
 + `src/` - Source Code - has all utilities for preprocessing, Lightning Model definitions, utilities.

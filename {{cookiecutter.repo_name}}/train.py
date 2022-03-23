@@ -17,7 +17,7 @@ def train() -> None:
     # Parse Quinfig (via Quinine Argparse Binding)
     print("[*] {{cookiecutter.project}} :: Launching =>>>")
     quinfig = QuinineArgumentParser(schema=get_train_schema()).parse_quinfig()
-    print("\t=>> Launching core {{cookiecutter.repo_name}} training script...")
+    print("\t=>> Thunder is good, thunder is impressive; but it is Lightning that does all the work (Mark Twain)...")
 
     # Create Unique Run Name
     run_id = quinfig.run_id
